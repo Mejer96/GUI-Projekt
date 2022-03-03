@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+        }
+
+        .inner-header {
+            width: 500px;
+            height: 100%;
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 100%;
+            display: table;
+            margin: auto;
+        }
+        .logo h1 {
+            color: white;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Geneva,serif;
+            font-size: 32px;
+            font-weight: 200;
+        }
+
+        .nav_one {
+            height: 100%;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .nav_one a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 30px;
+        }
+
+        .nav_one a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+
+        .nav_two {
+            height: 100%;
+            float: right;
+            vertical-align: middle;
+        }
+
+        .nav_two a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 40px;
+        }
+
+        .nav_two a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+        .header_img {
+            border-radius: 15px;
+            margin-top: -20px;
+            height: 120px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .news_section {
+            width: 100%;
+            display: block;
+            overflow: auto;
+
+        }
+
+        .news_section_article {
+            width: 30%;
+            height: 300px;
+            background-color: white;
+            border-radius: 15px;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            background-color: black;
+        }
+
+        .news_section_article h1 {
+            margin-top: -5px;
+            color: white;
+            margin-bottom: 4px;
+        }
+
+        .news_section_img {
+            height: 66%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<div class="header">
+
+
+    <ul class="nav_one">
+        <a><li>Om os</li></a>
+        <a><li>Om Madspild</li></a>
+    </ul>
+
+    <ul class = "nav_two">
+        <a><li>Til Forbrugeren</li></a>
+        <a><li>Til Virksomheden</li></a>
+    </ul>
+
+    <div class="inner-header" >
+        <div class="logo">
+            <h1>DANMARK MOD MADSPILD</h1>
+        </div>
+    </div>
+</div>
+
+<img class="header_img" th:src="@{/img/Vegetables1.jpg}" src="/static/img/Vegetables1.jpg" alt="Picture">
+<h1>Seneste nyt om madspild</h1>
+<hr>
+<div class = news_section>
+    <div class="news_section_article">
+        <img class="news_section_img" th:src = "@{/img/activism.jpg}" src="/static/img/activism.jpg" alt="news_picture">
+        <h1>Sådan får du politikerne til at lytte</h1>
+    </div>
+    <div class="news_section_article">
+        <img class="news_section_img" th:src = "@{/img/familyArticle.jpg}" src="/static/img/familyArticle.jpg" alt="news_picture">
+        <h1>Minimér dit madspild, når du handler dagligvare</h1>
+    </div>
+    <div class="news_section_article">
+        <img class="news_section_img" th:src = "@{/img/foodwaste.jpg}" src="/static/img/foodwaste.jpg" alt="news_picture">
+        <h1>Ny rapport om madspild fra tænketanken StyrDitSkraldMand</h1>
+
+    </div>
+</div>
+<hr>
+<h1>Donér til et godt formål:</h1>
+<hr>
+
+</body>
+</html>
