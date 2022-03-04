@@ -2,9 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Til Forbrugeren</title>
+
+    <style>
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            position: fixed;
+        }
+
+        .inner-header {
+            width: 500px;
+            height: 100%;
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 100%;
+            display: table;
+            margin: auto;
+        }
+        .logo h1 {
+            color: white;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Geneva,serif;
+            font-size: 32px;
+            font-weight: 200;
+        }
+
+        .nav_one {
+            height: 100%;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .nav_one a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 30px;
+        }
+
+        .nav_one a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+
+        .nav_two {
+            height: 100%;
+            float: right;
+            vertical-align: middle;
+        }
+
+        .nav_two a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 40px;
+        }
+
+        .nav_two a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+        .header_img {
+            border-radius: 15px;
+            margin-top: 85px;
+            height: 120px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .article_section {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+
+        .article_section p {
+            font-family: Geneva,serif;
+            font-size: 20px;
+        }
+
+    </style>
+
 </head>
 <body>
+
+<div class="header">
+
+
+    <ul class="nav_one">
+        <a><li>Om os</li></a>
+        <a><li>Om Madspild</li></a>
+    </ul>
+
+    <ul class = "nav_two">
+        <a><li>Til Forbrugeren</li></a>
+        <a><li>Til Virksomheden</li></a>
+    </ul>
+
+    <div class="inner-header" >
+        <div class="logo">
+            <h1>DANMARK MOD MADSPILD</h1>
+        </div>
+    </div>
+</div>
+
+<img class="header_img" th:src="@{/img/Vegetables1.jpg}" src="/static/img/Vegetables1.jpg" alt="Picture">
+
+<div class="article_section">
+    <h1>Råd til dig som forbruger</h1>
+    <p>
+        1. Lav en madplan
+        <br>
+        Planlægning er essentielt, når du skal lave en god madplan, der holder.
+        Inddrag familien. Snak med dem om, hvad de har lyst til at spise, og hvad der skal ske i ugens løb, så I kan planlægge ud fra alles ønsker og aktiviteter.
+        Vælg en fleksibel løsning. Lange ugeplaner ryger tit i vasken, fordi familiens planer ændrer sig. Lav i stedet korte 2-dages moduler, som kan byttes rundt. En madplan i moduler er en fleksibel løsning.
+        Gør plads til improvisation – put for eksempel en dag ind til det hver uge.
+        <br>
+        <br>
+        2. Skriv en indkøbsliste
+        <br>
+        Handler du uden at vide, præcis hvad du går efter, kan du let lave fejlkøb.
+        Indkøbslisten er dit bedste redskab i kampen mod madspild - lav den altid, inden du går hjemmefra (og hold dig til listen).
+        Planlæg din indkøbsliste, så du har måltider til mange dage. Hvis du kun køber ind 1 til 2 gange om ugen, udsætter du dig selv mindre for spontane fristelser i supermarkedet.
+        Vælg retter, der indeholder nogle af de samme ingredienser. For eksempel kan du både bruge broccoli i en wok-ret og i en smoothie til morgenmad.
+        <br>
+        <br>
+        3. Tjek skabe, skuffer, fryser og køleskab
+        <br>
+        Har du et lager af pasta, hvedemel, ris og bønner? Du glemmer let, hvad du har i skabet – og så ender du måske med at købe nyt, selv om du havde en rest i skabet.
+        Tjek skuffer og skabe derhjemme, inden du går ud og handler. Så køber du ikke mad, du allerede har.
+        Orden i skabe, skuffer og i dit forråd af tørvarer gør det lettere for dig at købe de varer, du rent faktisk skal bruge i supermarkedet. Og så er det let at supplere med ekstra ingredienser.
+        4. Spis, før du shopper
+        Sult kan let friste dig til at købe mad impulsivt. Og derfor kan du være mere tilbøjelig til både at købe for meget mad og usunde varer, når du køber ind.
+    </p>
+</div>
 
 </body>
 </html>

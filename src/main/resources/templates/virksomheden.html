@@ -2,9 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Til Virksomheden</title>
+
+    <style>
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            position: fixed;
+            top: 5px;
+        }
+
+        .inner-header {
+            width: 500px;
+            height: 100%;
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 100%;
+            display: table;
+            margin: auto;
+        }
+        .logo h1 {
+            color: white;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Geneva,serif;
+            font-size: 32px;
+            font-weight: 200;
+        }
+
+        .nav_one {
+            height: 100%;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .nav_one a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 30px;
+        }
+
+        .nav_one a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+
+        .nav_two {
+            height: 100%;
+            float: right;
+            vertical-align: middle;
+        }
+
+        .nav_two a {
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 40px;
+        }
+
+        .nav_two a li {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+            font-size: 16px;
+        }
+        .header_img {
+            border-radius: 15px;
+            height: 120px;
+            margin-top: 85px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .article_section {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+
+        .article_section p {
+            font-family: Geneva,serif;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+    </style>
+
 </head>
 <body>
+
+<div class="header">
+    <ul class="nav_one">
+        <a><li>Om os</li></a>
+        <a><li>Om Madspild</li></a>
+    </ul>
+
+    <ul class = "nav_two">
+        <a><li>Til Forbrugeren</li></a>
+        <a><li>Til Virksomheden</li></a>
+    </ul>
+
+    <div class="inner-header" >
+        <div class="logo">
+            <h1>DANMARK MOD MADSPILD</h1>
+        </div>
+    </div>
+</div>
+
+<img class="header_img" th:src="@{/img/Vegetables1.jpg}" src="/static/img/Vegetables1.jpg" alt="Picture">
+
+<div class ="article_section">
+    <h1>Hvad du kan gøre som virksomhed</h1>
+
+    <p>
+        En række af landets største virksomheder i fødevarebranchen skriver under på en aftale om at halvere deres madspild inden 2030.
+        Det sker tirsdag klokken 9 i forbindelse med Danmarks første nationale madspildsdag, oplyser Miljø- og Fødevareministeriet.
+        Foreløbig har 27 virksomheder tilsluttet sig aftalen, der også får opbakning af brancheorganisationerne Dansk Industri, Dansk Erhverv og Landbrug & Fødevarer.
+        Blandt underskriverne er Danish Crown, Arla, Salling Group, Coop og McDonalds.
+        <br>
+        <br>
+        Den nye aftale bliver mødt med stor glæde af fødevareminister Mogens Jensen (S).
+        »Det er en vigtig aftale i forhold til at reducere det madspild, vi har i Danmark.«
+        »At en så stor del af fødevarebranchen stiller sig på mål for, at de vil halvere deres madspild inden 2030, får betydning for, at vi bruger ressourcerne ordentligt og får nedbragt vores CO2-udslip,« siger Mogens Jensen.
+        Han kommer til løbende at måle på, hvordan reduktionen går.
+        <br>
+        <br>
+        »Hvis vi kan se, at vi ikke når i mål, så må vi selvfølgelig vurdere, om der skal lovgivning til.«
+        »Men mit udgangspunkt er, at det kan lykkes. Der er ingen grund til at lave lovgivning, hvis branchen selv kan finde ud af at gøre det her, og det er der en stor vilje til.«
+        Forskellige led i fødevarebranchen står i dag for to tredjedele af Danmarks årlige madspild på omkring 700.000 ton.
+        Det svarer til 3,8 procent af Danmarks CO2-udledning.
+        Aftalen er i tråd med FNs verdensmål om en reducering af madspild på 50 procent inden 2030, som Danmark også har som målsætning.
+        Den har fået navnet »Danmark mod Madspild«.
+
+        /ritzau
+    </p>
+
+</div>
 
 </body>
 </html>
