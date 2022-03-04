@@ -14,7 +14,7 @@ public class GuiProjektApplication {
         SpringApplication.run(GuiProjektApplication.class, args);
     }
 
-    @GetMapping
+    @GetMapping("/")
     public String index() {
         return "index";
     }
@@ -31,11 +31,11 @@ public class GuiProjektApplication {
 
     @GetMapping("/om_os")
     public String om_os() {
-        return "Om os";
+        return "Omos";
     }
-    @GetMapping("/om_madspild")
+    @GetMapping("/ommadspild")
     public String om_madspild() {
-        return "om madspild";
+        return "ommadspild";
     }
 
 }

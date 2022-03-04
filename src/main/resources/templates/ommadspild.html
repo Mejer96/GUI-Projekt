@@ -113,13 +113,12 @@
 
 <div class="header">
     <ul class="nav_one">
-        <a><li>Om os</li></a>
-        <a><li>Om Madspild</li></a>
+        <a th:href="ommadspild"><li>Om Madspild</li></a>
     </ul>
 
     <ul class = "nav_two">
-        <a><li>Til Forbrugeren</li></a>
-        <a><li>Til Virksomheden</li></a>
+        <a th:href="forbrugeren"><li>Til Forbrugeren</li></a>
+        <a th:href="virksomheden"><li>Til Virksomheden</li></a>
     </ul>
 
     <div class="inner-header" >
@@ -130,6 +129,35 @@
 </div>
 
 <img class="header_img" th:src="@{/img/Vegetables1.jpg}" src="/static/img/Vegetables1.jpg" alt="Picture">
+
+<div class="article_section">
+    <h1>Om Madspild</h1>
+    <p>
+
+        Hvorfor er det en god idé at mindske dit madspild? Fordi:
+        <br>
+        Din familie vil kunne spare over 7.000 kr. om året ved at mindske madspild.
+        Du vil kunne spare flere timer i madindkøb hver måned.
+        Du vil være med til at mindske miljøbelastning og CO2-udledning.
+        Du vil være med til at passe på Jordens i forvejen knappe ressourcer samt mindske naturbeslaglæggelsen.
+        Du vil opføre dig ansvarligt i en verden, hvor på verdensplan ca. hver 9. barn, kvinde og mand mangler mad.
+        Du vil være med til at inspirere din omgangskreds og på lang sigt hele fødevareværdikæden til at mindske madspild.
+    </p>
+    <h2>Hvor meget mad smides ud i Danmark?</h2>
+
+    <p>
+        Tal fra Miljøstyrelsen viser, at vi i Danmark samlet set hvert år smider for over 700.000 ton mad ud, som kunne være spist.
+        Husholdningernes madspild udgør 260.000 ton per år. I servicesektoren er der et årligt madspild på 227.000 ton,
+        heraf 163.000 ton fra detailhandlen, 29.000 ton fra hoteller og restauranter, og 31.000 ton fra institutioner og storkøkkener om året.
+        Madspild fra primærproduktionen udgør 100.000 ton per år, mens fødevareindustrien står for et årligt madspild på 133.000 ton.
+        <br>
+        <br>
+        Ifølge Landbrug & Fødevarer koster madspild danske husholdninger 13,5 milliarder kroner om året inklusiv moms og afgifter.
+        Alle de spiselige fødevarer, der årligt spildes i Danmark, svarer til syv gange vægten af Marmorkirken og 3,8 % af den samlede CO2-udledning,
+        der hvert år udledes fra Danmark, estimerer Miljø- og Fødevareministeriet.
+    </p>
+
+</div>
 
 </body>
 </html>
